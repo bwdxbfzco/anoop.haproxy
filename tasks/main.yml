@@ -5,8 +5,6 @@
   tags:
     - haproxy
     - haproxy-install
-    - haproxy-firewall
-    - haproxy-selinux
     - haproxy-config
     - haproxy-sysctl
   when: haproxy_mode == "system"
