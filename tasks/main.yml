@@ -13,10 +13,6 @@
   tags: [ haproxy, haproxy-install ]
   when: haproxy_mode == "system"
 
-- include: firewall.yml
-  tags: [ haproxy, haproxy-firewall ]
-  when: haproxy_firewalld | bool
-
 - include: selinux.yml
   tags: [ haproxy, haproxy-selinux ]
   when: haproxy_selinux | bool
