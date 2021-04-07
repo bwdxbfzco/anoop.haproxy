@@ -23,7 +23,7 @@ haproxy_fw_ports:
   - "{{ haproxy_stats_port }}/tcp"
 
 # Global
-haproxy_global_maxconn: 4000
+haproxy_global_maxconn: 50000
 haproxy_global_chroot: /var/lib/haproxy
 haproxy_global_daemon: true
 haproxy_global_group: haproxy
